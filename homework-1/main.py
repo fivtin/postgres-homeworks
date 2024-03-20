@@ -46,6 +46,7 @@ def main():
     load_table_from_csv("customers_data.csv", "customers", pg_conn)
     load_table_from_csv("employees_data.csv", "employees", pg_conn)
     load_table_from_csv("orders_data.csv", "orders", pg_conn)
+    pg_conn.close()
 
 
 if __name__ == "__main__":
